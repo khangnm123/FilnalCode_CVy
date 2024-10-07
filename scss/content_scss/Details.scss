@@ -1,0 +1,281 @@
+.card_wrapper{
+    position: relative;
+    width: 100%;
+    .centerr_flex{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 15px;
+        h2{
+            text-transform: uppercase;
+            padding: 20px 0px;
+        }
+        .flex_content{
+            display: grid;
+            grid-template-columns: auto auto;
+            .left{
+                width: 100%;
+                position: relative;
+                padding-right: 180px;
+                .main_image{
+                    .thumnail_text{
+                        a{
+                            padding-top: 150%;
+                            img{
+                                width: 125%;
+                            }
+                        }
+                    }
+                }
+                .option_flex{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 126%;
+                    padding: 20px 0px;
+                }
+            }
+            .right{
+                position: relative;
+                width: 100%;
+                h3{
+                    font-size: 32px;
+                }
+                p{
+                    color: #000000;
+                    font-size: 18px;
+                }
+                #dola{
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: #000;
+                    padding: 12px 0px;
+                }
+                h5{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                .size{
+                    padding: 15px 0px 30px 0px;
+                    ul{
+                        display: flex;
+                        list-style-type: none;
+                        li{
+                            border: 1px solid #000;
+                            padding: 15px 15px;
+                            text-align: center;
+                            p{
+                                font-size: 24px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .button_content{
+                    border-top: 2px solid #757575;
+                    padding-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    button{
+                        border: 2px solid #000;
+                        outline: none;
+                        background: #9747FF;
+                        padding: 15px 70px;
+                        margin-right: 20px;
+                        transition: 0.5s ease-in-out;
+                        a{
+                            text-decoration: none;
+                            font-size: 18px;
+                            color: #FFFFFF;
+                        }
+                    }
+                    .bg_heart{
+                        .heart1{
+                            position: relative;
+                            bottom: unset;
+                            right: unset;
+                            ion-icon{
+                                display: block;
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    padding: 20px 0px;
+                    #share{
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        color: #000000;
+                        font-weight: bold;
+                    }
+                    ul{
+                        display: flex;
+                        list-style-type: none;
+                        li{
+                            padding: 0px 10px;
+                            a{
+                                text-decoration: none;
+                                ion-icon{
+                                    background-color: #000000;
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                                #share1{
+                                    background: none;
+                                    color: #000000;
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.product_details{
+    padding: 0px 10px;
+    .center_flex{
+        display: block;
+        max-width: 1200px;
+        margin: 0 auto;
+        h4{
+            font-size: 28px;
+            color: #383838;
+            border-bottom: 2px solid #757575;
+            padding-bottom: 25px;
+            text-transform: uppercase;
+        }
+        .text_flex{
+            padding-top: 10px;
+            display: flex;
+            b{
+                font-size: 20px;
+            }   
+            p{
+                font-size: 20px;
+                padding: 0px 10px;
+            }
+           
+        }
+        ul{
+            li{
+                margin: 10px 50px;
+                font-size: 20px;
+            }
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+.picture_content{
+    padding: 0px 10px;
+    .center_flex{
+        display: block;
+        max-width: 1200px;
+        margin: 0 auto;
+        h4{
+            font-size: 28px;
+            color: #383838;
+            border-bottom: 2px solid #757575;
+            padding: 30px 0px;
+            text-transform: uppercase;
+        }
+        &-picture{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 40px;
+        }
+        .item{
+            padding: 40px 5px;
+        }
+        .content_title{
+            text-align: center;
+            p{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .rate{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+.rate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+.rate:not(:checked) > input {
+    display: none;
+}
+.rate:not(:checked) > label {
+    display: flex;
+    width:25px;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ffc700;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+.color{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    .red_color{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #FF4949;
+        border:2px solid #FFFFFF;
+        box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.3);
+    }
+    .blue_color{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #7AAFFF;
+        border:2px solid #FFFFFF;
+        box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.3);
+        margin: 0px 15px;
+        
+    }
+    .black_color{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #000000;
+        border:2px solid #FFFFFF;
+        box-shadow: 0px 5px 7.5px rgba(0, 0, 0, 0.3);
+    }
+}
+.card_wrapper .centerr_flex .flex_content .right .button_content .button_hover:hover{
+    background: none;
+    transition: 1s ease-in-out;
+    border: 2px solid #9747FF;
+    a{
+        color: #000000;
+    }
+}
