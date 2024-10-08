@@ -277,15 +277,29 @@ ion-icon.is-active{
     display: none;
 }
 .swiper-scrollbar-horizontal{
-    left: var(--swiper-scrollbar-sides-offset,26%) !important;
-    bottom:var(--swiper-scrollbar-bottom,40px) !important;
+    left: var(--swiper-scrollbar-sides-offset,28%) !important;
+    bottom:var(--swiper-scrollbar-bottom,65px) !important;
     top: var(--swiper-scrollbar-top,auto) !important;
     height: var(--swiper-scrollbar-size,10px) !important;
-    width: calc(60% - 2 * var(--swiper-scrollbar-sides-offset,1%)) !important;
+    width: calc(45% - 2 * var(--swiper-scrollbar-sides-offset,1%)) !important;
+    border-radius: var(--swiper-scrollbar-border-radius,0px) !important;
 }
 .swiper-scrollbar-drag{
     background: #6F00FF !important;
+    border-radius: var(--swiper-scrollbar-border-radius,0px) !important;
 }
 .swiper-scrollbar{
     background: #D9D9D9 !important;
+}
+
+
+.container .banner_content .button_signup button:hover{
+    background: none;
+    a{
+        color: #FFFFFF;
+    }
+}
+
+.swiper-scrollbar{
+    opacity: 10 !important;
 }

@@ -99,7 +99,6 @@
   width: 100%;
   color: #000;
   font-size: 18px;
-  font-weight: 700;
 }
 .container .input_text1 {
   width: 320px;
@@ -119,8 +118,7 @@
   background: none;
   width: 100%;
   color: #000;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
 }
 .container .carousel {
   position: relative;
@@ -133,12 +131,11 @@
   z-index: 1000;
 }
 .container .carousel .carousel_content .button_register button {
-  background-color: #D9D9D9;
+  background-color: #6F00FF;
   border: none;
   outline: none;
   width: 288px;
   height: 76px;
-  border: 1px solid #000;
   cursor: pointer;
 }
 .container .carousel .carousel_content .button_register button a {
@@ -146,7 +143,7 @@
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
-  color: #000;
+  color: #FFFFFF;
 }
 .container .carousel img {
   width: 100%;
@@ -220,6 +217,8 @@
 .container .product_list-content .content_right .item .color {
   text-transform: uppercase;
   font-size: 14px;
+  text-align: center;
+  justify-content: center;
 }
 .container .product_list-content .content_right .item .color b {
   font-weight: bold;
@@ -229,6 +228,13 @@
   position: relative;
   width: 100%;
   background-color: #000000;
+}
+.container .banner_content-bg {
+  background: url("../image/ADICLUB (nặng hơn).gif");
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .container .banner_content h2 {
   padding: 50px 0px 25px 0px;
@@ -262,16 +268,6 @@
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: bold;
-}
-.container .banner_content .bg_adiclub {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-.container .banner_content .bg_adiclub1 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 .container .footer_end {
   width: 100%;
@@ -1053,19 +1049,32 @@ ion-icon {
 }
 
 .swiper-scrollbar-horizontal {
-  left: var(--swiper-scrollbar-sides-offset, 26%) !important;
-  bottom: var(--swiper-scrollbar-bottom, 40px) !important;
+  left: var(--swiper-scrollbar-sides-offset, 28%) !important;
+  bottom: var(--swiper-scrollbar-bottom, 65px) !important;
   top: var(--swiper-scrollbar-top, auto) !important;
   height: var(--swiper-scrollbar-size, 10px) !important;
-  width: calc(60% - 2 * var(--swiper-scrollbar-sides-offset, 1%)) !important;
+  width: calc(45% - 2 * var(--swiper-scrollbar-sides-offset, 1%)) !important;
+  border-radius: var(--swiper-scrollbar-border-radius, 0px) !important;
 }
 
 .swiper-scrollbar-drag {
   background: #6F00FF !important;
+  border-radius: var(--swiper-scrollbar-border-radius, 0px) !important;
 }
 
 .swiper-scrollbar {
   background: #D9D9D9 !important;
+}
+
+.container .banner_content .button_signup button:hover {
+  background: none;
+}
+.container .banner_content .button_signup button:hover a {
+  color: #FFFFFF;
+}
+
+.swiper-scrollbar {
+  opacity: 10 !important;
 }
 
 .card_wrapper {
@@ -1082,24 +1091,16 @@ ion-icon {
   padding: 20px 0px;
 }
 .card_wrapper .centerr_flex .flex_content {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
 }
 .card_wrapper .centerr_flex .flex_content .left {
   width: 100%;
   position: relative;
-  padding-right: 180px;
-}
-.card_wrapper .centerr_flex .flex_content .left .main_image .thumnail_text a {
-  padding-top: 150%;
-}
-.card_wrapper .centerr_flex .flex_content .left .main_image .thumnail_text a img {
-  width: 125%;
+  padding-right: 75px;
 }
 .card_wrapper .centerr_flex .flex_content .left .option_flex {
   display: flex;
   justify-content: space-around;
-  width: 126%;
   padding: 20px 0px;
 }
 .card_wrapper .centerr_flex .flex_content .right {
@@ -1136,12 +1137,12 @@ ion-icon {
   text-align: center;
 }
 .card_wrapper .centerr_flex .flex_content .right .size ul li p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 .card_wrapper .centerr_flex .flex_content .right .button_content {
   border-top: 2px solid #757575;
-  padding-top: 30px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
 }
@@ -1149,13 +1150,12 @@ ion-icon {
   border: 2px solid #000;
   outline: none;
   background: #9747FF;
-  padding: 15px 70px;
+  padding: 10px 70px;
   margin-right: 20px;
-  transition: 0.5s ease-in-out;
 }
 .card_wrapper .centerr_flex .flex_content .right .button_content button a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 21px;
   color: #FFFFFF;
 }
 .card_wrapper .centerr_flex .flex_content .right .button_content .bg_heart .heart1 {
@@ -1165,8 +1165,9 @@ ion-icon {
 }
 .card_wrapper .centerr_flex .flex_content .right .button_content .bg_heart .heart1 ion-icon {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  background: #9747FF;
 }
 .card_wrapper .centerr_flex .flex_content .right .icon {
   display: flex;
@@ -1175,7 +1176,7 @@ ion-icon {
 }
 .card_wrapper .centerr_flex .flex_content .right .icon #share {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   font-weight: bold;
 }
@@ -1191,14 +1192,14 @@ ion-icon {
 }
 .card_wrapper .centerr_flex .flex_content .right .icon ul li a ion-icon {
   background-color: #000000;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 .card_wrapper .centerr_flex .flex_content .right .icon ul li a #share1 {
   background: none;
   color: #000000;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .product_details {
@@ -1298,19 +1299,6 @@ ion-icon {
   color: #ffc700;
 }
 
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-  color: #deb217;
-}
-
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-  color: #c59b08;
-}
-
 .color {
   display: flex;
   width: 100%;
@@ -1344,11 +1332,18 @@ ion-icon {
 
 .card_wrapper .centerr_flex .flex_content .right .button_content .button_hover:hover {
   background: none;
-  transition: 1s ease-in-out;
   border: 2px solid #9747FF;
 }
 .card_wrapper .centerr_flex .flex_content .right .button_content .button_hover:hover a {
   color: #000000;
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1401,7 +1396,7 @@ ion-icon {
     flex-wrap: wrap;
   }
   .card_wrapper .centerr_flex .flex_content .left {
-    padding-right: 140px;
+    padding-right: 15px;
   }
   .card_wrapper .centerr_flex .flex_content .right h3 {
     font-size: 24px;
@@ -1481,10 +1476,16 @@ ion-icon {
   .card_wrapper .centerr_flex .flex_content .left .option_flex {
     width: 100%;
   }
+  .swiper-scrollbar-horizontal {
+    display: none;
+  }
 }
 @media only screen and (max-width: 800px) {
   .container .nav_bottom-center .list_ionc li {
     padding: 0px 10px;
+  }
+  .card_wrapper .centerr_flex .flex_content .right .button_content {
+    padding-top: 20px !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1530,11 +1531,6 @@ ion-icon {
   .container .nav_top p {
     font-size: 16px;
   }
-  .menu {
-    display: block !important;
-    color: white;
-    font-size: 24px;
-  }
   .card_wrapper .centerr_flex .flex_content .left .main_image .thumnail_text a {
     padding-top: 110%;
   }
@@ -1554,7 +1550,7 @@ ion-icon {
     font-size: 18px;
   }
   .card_wrapper .centerr_flex .flex_content .right .button_content button {
-    padding: 15px 30px;
+    padding: 10px 30px;
   }
   .card_wrapper .centerr_flex .flex_content .right .button_content .bg_heart .heart1 ion-icon {
     width: 30px;
@@ -1567,6 +1563,12 @@ ion-icon {
   .card_wrapper .centerr_flex .flex_content .right .icon ul li a #share1 {
     width: 20px;
     height: 20px;
+  }
+  .product_details .center_flex h4 {
+    width: 80%;
+  }
+  .picture_content .center_flex h4 {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -1699,6 +1701,18 @@ ion-icon {
   .container .banner_content i {
     font-size: 21px;
   }
+  .container .banner_content-bg {
+    display: none;
+  }
+  .container .banner_content .content_bg {
+    background: url("../image/ADICLUB-mobile.gif");
+    object-fit: cover;
+    background-size: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block !important;
+  }
   .container .product_list-content .content_right .item .title {
     font-size: 12px;
   }
@@ -1739,6 +1753,19 @@ ion-icon {
   }
   .picture_content .center_flex h4 {
     font-size: 22px;
+  }
+  .card_wrapper .centerr_flex .flex_content .right {
+    text-align: center;
+  }
+  .card_wrapper .centerr_flex .flex_content .right .button_content {
+    justify-content: left;
+  }
+  .card_wrapper .centerr_flex .flex_content .right .button_content button {
+    padding: 7px 50px;
+  }
+  .card_wrapper .centerr_flex .flex_content .right .icon {
+    width: 60%;
+    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 435px) {
@@ -1817,9 +1844,24 @@ ion-icon {
   .card_wrapper .centerr_flex .flex_content .right h3 {
     font-size: 20px;
   }
+  .card_wrapper .centerr_flex .flex_content .right .icon {
+    width: 80%;
+  }
   .card_wrapper .option_flex img {
     width: 100px;
     height: 100px;
+  }
+  .product_details .center_flex h4 {
+    width: 100%;
+  }
+  .product_details ul li {
+    margin: 10px 20px !important;
+  }
+  .picture_content .center_flex h4 {
+    width: 100%;
+  }
+  .card_wrapper .centerr_flex .flex_content .right .button_content button a {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 375px) {
