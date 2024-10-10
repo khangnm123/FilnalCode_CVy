@@ -131,8 +131,8 @@
                 left: 18%;
                 z-index: 1000;
                 button{
-                    background-color: #6F00FF;
-                    border: none;
+                    background-color: #FFFFFF;
+                    border: 1px solid #000;
                     outline: none;
                     width: 288px;
                     height: 76px;
@@ -142,7 +142,7 @@
                         text-decoration: none;
                         font-size: 24px;
                         font-weight: bold;
-                        color: #FFFFFF;
+                        color: #000000;
                     }
                 }
 
@@ -233,7 +233,7 @@
         width: 100%;
         background-color: #000000;
         &-bg{
-            background: url('../image/ADICLUB\ \(nặng\ hơn\).gif');
+            background: url('../image/Details/1440x\ 176\ pc\ mới.gif');
             object-fit: cover;
             object-position: center;
             background-size: cover;
@@ -249,7 +249,7 @@
         }
         i{
             font-size: 30px;
-            font-weight: 100;
+            color: #FFFFFF;
         }
         .button_signup{ 
              display: flex;
@@ -412,4 +412,10 @@
 }
 #none{
     display: none;
+}
+.container .carousel .carousel_content .button_register button:hover{
+    background: #6F00FF;
+    a{
+        color: #FFFFFF;
+    }
 }

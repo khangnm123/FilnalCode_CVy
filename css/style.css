@@ -131,8 +131,8 @@
   z-index: 1000;
 }
 .container .carousel .carousel_content .button_register button {
-  background-color: #6F00FF;
-  border: none;
+  background-color: #FFFFFF;
+  border: 1px solid #000;
   outline: none;
   width: 288px;
   height: 76px;
@@ -143,7 +143,7 @@
   text-decoration: none;
   font-size: 24px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #000000;
 }
 .container .carousel img {
   width: 100%;
@@ -230,7 +230,7 @@
   background-color: #000000;
 }
 .container .banner_content-bg {
-  background: url("../image/ADICLUB (nặng hơn).gif");
+  background: url("../image/Details/1440x 176 pc mới.gif");
   object-fit: cover;
   object-position: center;
   background-size: cover;
@@ -246,7 +246,7 @@
 }
 .container .banner_content i {
   font-size: 30px;
-  font-weight: 100;
+  color: #FFFFFF;
 }
 .container .banner_content .button_signup {
   display: flex;
@@ -1067,10 +1067,13 @@ ion-icon {
 }
 
 .container .banner_content .button_signup button:hover {
-  background: none;
+  background: #FFFFFF;
 }
 .container .banner_content .button_signup button:hover a {
-  color: #FFFFFF;
+  color: #000000;
+}
+.container .banner_content .button_signup button:hover i {
+  color: #000000;
 }
 
 .swiper-scrollbar {
@@ -1705,7 +1708,7 @@ ion-icon {
     display: none;
   }
   .container .banner_content .content_bg {
-    background: url("../image/ADICLUB-mobile.gif");
+    background: url("../image/Details/_773 x 221 Tablet mới.gif");
     object-fit: cover;
     background-size: cover;
     object-position: center;
@@ -1933,6 +1936,13 @@ ion-icon {
 
 #none {
   display: none;
+}
+
+.container .carousel .carousel_content .button_register button:hover {
+  background: #6F00FF;
+}
+.container .carousel .carousel_content .button_register button:hover a {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

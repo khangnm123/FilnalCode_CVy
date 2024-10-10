@@ -294,9 +294,12 @@ ion-icon.is-active{
 
 
 .container .banner_content .button_signup button:hover{
-    background: none;
+    background: #FFFFFF;
     a{
-        color: #FFFFFF;
+        color: #000000;
+    }
+    i{
+        color: #000000;
     }
 }
 
