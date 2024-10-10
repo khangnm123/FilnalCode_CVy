@@ -276,6 +276,20 @@
                 }
             }
         }
+        .banner_content{
+            &-bg{
+                display: none;
+            }
+            .content_bg{
+                background: url('../image/Details/_773\ x\ 221\ Tablet\ mới.gif');
+                object-fit: cover;
+                background-size: cover;
+                object-position: center;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: block !important;
+            }
+        }
         .carousel{
             img{
                 display: none;
@@ -500,6 +514,23 @@
                 }
             }
         }
+        .banner_content{
+            &-bg{
+                display: none;
+            }
+            .content_bg{
+                display: none;
+            }
+            .bg_content{
+                background: url('../image/Details/420\ x\ 168\ px\ mobile\ mới.gif');
+                object-fit: cover;
+                background-size: cover;
+                object-position: center;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: block !important;
+            }
+        }
     }
     .button_apply{
         margin: 20px 0px;
@@ -549,20 +580,6 @@
         }
         .banner_content i{
             font-size: 21px;
-        }
-        .banner_content{
-            &-bg{
-                display: none;
-            }
-            .content_bg{
-                background: url('../image/Details/_773\ x\ 221\ Tablet\ mới.gif');
-                object-fit: cover;
-                background-size: cover;
-                object-position: center;
-                background-repeat: no-repeat;
-                background-position: center;
-                display: block !important;
-            }
         }
         .product_list{
             &-content{

@@ -1508,6 +1508,18 @@ ion-icon {
   .container .banner_content .button_signup button img {
     display: none;
   }
+  .container .banner_content-bg {
+    display: none;
+  }
+  .container .banner_content .content_bg {
+    background: url("../image/Details/_773 x 221 Tablet mới.gif");
+    object-fit: cover;
+    background-size: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block !important;
+  }
   .container .carousel img {
     display: none;
   }
@@ -1658,6 +1670,21 @@ ion-icon {
   .container .product_list-content .content_right .item .title {
     font-size: 16px;
   }
+  .container .banner_content-bg {
+    display: none;
+  }
+  .container .banner_content .content_bg {
+    display: none;
+  }
+  .container .banner_content .bg_content {
+    background: url("../image/Details/420 x 168 px mobile mới.gif");
+    object-fit: cover;
+    background-size: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block !important;
+  }
   .button_apply {
     margin: 20px 0px;
   }
@@ -1703,18 +1730,6 @@ ion-icon {
   }
   .container .banner_content i {
     font-size: 21px;
-  }
-  .container .banner_content-bg {
-    display: none;
-  }
-  .container .banner_content .content_bg {
-    background: url("../image/Details/_773 x 221 Tablet mới.gif");
-    object-fit: cover;
-    background-size: cover;
-    object-position: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block !important;
   }
   .container .product_list-content .content_right .item .title {
     font-size: 12px;
